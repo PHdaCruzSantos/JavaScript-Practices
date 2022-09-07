@@ -27,6 +27,8 @@ const attTime = (time) => {
 
 }
 
+
+
 const countDown = (time) => {
 
     const count = () => {
@@ -35,8 +37,8 @@ const countDown = (time) => {
         // if (time == 0 ) stopCount();
         // time--;
     }
-    const stopCount = () => clearInterval(idBySetInterval);
     const idBySetInterval = setInterval(count, 1000);
+    const stopCount = () => clearInterval(idBySetInterval);
 }
 
 const timeLeft = () => {
